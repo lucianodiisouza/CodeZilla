@@ -1,0 +1,78 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@2/distr/fira_code.css);
+body {
+  padding: 0;
+  margin: 0;
+}
+body * {
+  box-sizing: border-box;
+}
+.container {
+  height: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.titleBar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+    background: #202327;
+  font-family: "Fira Code";
+  color: #fff;
+  size: 10pt;
+  align-items: center;
+}
+
+.windowTitle {
+  padding: 10px;
+  height: auto;
+  display: inline-block;
+  font-family: "Fira Code";
+}
+
+.windowControls {
+  float: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 5px;
+  width: 100px;
+}
+
+.windowControls button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+.minimize {
+  background-color: yellow !important;
+}
+
+.maximize {
+  background-color: green !important;
+}
+
+.close {
+  background-color: red !important;
+}
+
+.windowControls button:hover {
+  opacity: 0.7;
+}
+
+.prevent-select{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.draggable {
+  -webkit-app-region: drag;
+}
