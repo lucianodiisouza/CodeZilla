@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/titleBar.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/snippetsStyle.css">
+
 </head>
 
 <body>
@@ -160,9 +162,23 @@
                 </ul>
             </div>
         </div>
-        <div class="codingScreen">
-            
+        <div class="explorerContainer explorerContainerStyles">
+            <div class="filesContainer">
+
+            </div>
+            <div class="folderFiles">
+                <div class="folderTitle">
+                    <div id="folderName">Pasta</div>
+                    <button id="syncFiles">Atualizar</button>
+                    <button id="changeFolder">Trocar</button>
+                </div>
+                <div class="exploredFilesContainer">
+
+                </div>
+            </div>
         </div>
+        <div class="editorContainer"></div>
+        <div class="widgetsContainer widgetsContainerStyles"></div>
     </div>
     <script src="js/titleBarStuff.js"></script>
     <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
